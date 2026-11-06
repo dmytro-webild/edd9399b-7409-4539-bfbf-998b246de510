@@ -209,7 +209,11 @@ export default function HomePage() {
           textAnimation="slide-up"
           tag="Book Mobile Service"
           title="Schedule Your Mobile Detail in NMB"
-          description="Ready to give your vehicle the deep-cleaning treatment it deserves? Fill out the form below or text (843) 555-7692."
+          description="Ready to give your vehicle the deep-cleaning treatment it deserves? Call 843-516-0826 or send a message below to request your detail."
+          phone="843-516-0826"
+          phoneLabel="Direct Line for Booking Appointments"
+          freeQuotesNote="Free quotes are available on all mobile detailing services."
+          inquiriesNote="Visitors are welcome to call at any time for questions or pricing inquiries."
           inputs={[
             { name: "name", type: "text", placeholder: "Full Name", required: true },
             { name: "phone", type: "tel", placeholder: "Phone Number (for text confirmation)", required: true },
