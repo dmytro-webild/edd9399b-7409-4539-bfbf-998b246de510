@@ -10,51 +10,52 @@ export default function Layout() {
     <StyleProvider buttonVariant="default" siteBackground="none" heroBackground="none">
       <SiteBackgroundSlot />
       <NavbarCentered
-                logo="Elite Detail"
+                logo="Rozay's Mobile Detailing"
                 navItems={[
+                  { name: "Workflow", href: "#process" },
+                  { name: "Crevice Specialty", href: "#specialty" },
                   { name: "Services", href: "#services" },
+                  { name: "About Rozay", href: "#about" },
                   { name: "Testimonials", href: "#testimonials" },
-                  { name: "Why Us", href: "#why-us" },
-                  { name: "Team", href: "#team" },
                   { name: "FAQ", href: "#faq" },
                   { name: "Contact", href: "#contact" },
                 ]}
-                ctaButton={{ text: "Book Now", href: "#contact" }}
+                ctaButton={{ text: "Book Mobile Detail", href: "#contact" }}
               />
       <main className="flex-grow">
         <Outlet />
       </main>
       <FooterSimpleCard
-                brand="Elite Detail"
+                brand="Rozay's Mobile Detailing"
                 columns={[
                   {
-                    title: "Services",
+                    title: "Specialties",
                     items: [
-                      { label: "Interior Detail", href: "#services" },
-                      { label: "Exterior Detail", href: "#services" },
-                      { label: "Ceramic Coating", href: "#services" },
-                      { label: "Full Detail Package", href: "#services" },
+                      { label: "Deep Crevice Purge", href: "#process" },
+                      { label: "Interior Steam Sanitation", href: "#process" },
+                      { label: "Exterior Crevice Wash", href: "#services" },
+                      { label: "Full Signature Detail", href: "#services" },
                     ],
                   },
                   {
-                    title: "Company",
+                    title: "Service Area",
                     items: [
-                      { label: "About Us", href: "#" },
-                      { label: "Our Team", href: "#team" },
-                      { label: "FAQ", href: "#faq" },
-                      { label: "Testimonials", href: "#testimonials" },
+                      { label: "North Myrtle Beach, SC", href: "#contact" },
+                      { label: "Cherry Grove, SC", href: "#contact" },
+                      { label: "Little River, SC", href: "#contact" },
+                      { label: "Grand Strand Area", href: "#contact" },
                     ],
                   },
                   {
-                    title: "Contact",
+                    title: "Contact Rozay",
                     items: [
-                      { label: "(555) 987-6543", href: "tel:5559876543" },
-                      { label: "info@elitedetail.com", href: "mailto:info@elitedetail.com" },
-                      { label: "Miami, FL" },
+                      { label: "(843) 555-7692", href: "tel:8435557692" },
+                      { label: "rozay@rozaysmobiledetailing.com", href: "mailto:rozay@rozaysmobiledetailing.com" },
+                      { label: "North Myrtle Beach, SC" },
                     ],
                   },
                 ]}
-                copyright="© 2026 Elite Detail. All rights reserved."
+                copyright="© 2026 Rozay's Mobile Detailing. All rights reserved."
                 links={[
                   { label: "Privacy Policy", href: "#" },
                   { label: "Terms of Service", href: "#" },

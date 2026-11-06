@@ -1,219 +1,298 @@
 import { StyleProvider } from "@/components/ui/StyleProvider";
 import HeroBillboardFeatures from "@/components/sections/hero/HeroBillboardFeatures";
+import FeaturesDetailedSteps from "@/components/sections/features/FeaturesDetailedSteps";
+import AboutFeaturesSplit from "@/components/sections/about/AboutFeaturesSplit";
+import FeaturesComparison from "@/components/sections/features/FeaturesComparison";
 import FeaturesStickyCards from "@/components/sections/features/FeaturesStickyCards";
 import TestimonialMarqueeOverlayCards from "@/components/sections/testimonial/TestimonialMarqueeOverlayCards";
-import FeaturesComparison from "@/components/sections/features/FeaturesComparison";
 import TeamOverlayCards from "@/components/sections/team/TeamOverlayCards";
 import FaqSimple from "@/components/sections/faq/FaqSimple";
 import ContactSplitForm from "@/components/sections/contact/ContactSplitForm";
 
 export default function HomePage() {
   return (
-<StyleProvider siteBackground="none" heroBackground="lightRaysCenter" buttonVariant="expand">
-        
+    <StyleProvider siteBackground="none" heroBackground="lightRaysCenter" buttonVariant="expand">
+      {/* Hero Section */}
+      <HeroBillboardFeatures
+        textAnimation="slide-up"
+        badge="Locally Owned • North Myrtle Beach, SC"
+        title="Rozay's Mobile Detailing"
+        description="North Myrtle Beach's premier mobile detailing specialist. We specialize in deep-crack cleaning, vent steam extraction, and hard-to-reach spots, bringing professional equipment right to your driveway."
+        primaryButton={{ text: "Book Mobile Service", href: "#contact" }}
+        secondaryButton={{ text: "View 5-Stage Process", href: "#process" }}
+        videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4"
+        features={[
+          {
+            icon: "Sparkles",
+            title: "Deep Crevice Specialist",
+            description: "Air vents, seat rail channels, cup holder cracks, and emblem seams thoroughly purged",
+          },
+          {
+            icon: "Truck",
+            title: "100% Mobile to Your Door",
+            description: "We bring high-heat steam & detailing power anywhere in North Myrtle Beach & Grand Strand",
+          },
+          {
+            icon: "Shield",
+            title: "Local Owner-Operator",
+            description: "Hands-on craftsmanship & personal pride from a local North Myrtle Beach business owner",
+          },
+        ]}
+      />
 
-        <HeroBillboardFeatures
+      {/* 5-Stage Cleaning Workflow Section */}
+      <div id="process">
+        <FeaturesDetailedSteps
+          tag="Step-by-Step Detailing Workflow"
+          title="Our 5-Stage Deep-Cleaning Process"
+          description="Explore our detailed workflow step by step, designed to eliminate dirt, sand, and grime from every hard-to-reach spot on your vehicle."
+          primaryButton={{ text: "Reserve Your Mobile Detail", href: "#contact" }}
+          secondaryButton={{ text: "Compare Our Method", href: "#specialty" }}
           textAnimation="slide-up"
-          badge="Now Booking"
-          title="Your Car Deserves the Best"
-          description="Professional detailing services that restore your vehicle's showroom finish. We use premium products and proven techniques to protect and enhance every surface."
-          primaryButton={{ text: "Book Now", href: "#contact" }}
-          secondaryButton={{ text: "Our Services", href: "#services" }}
-          videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4"
-          features={[
+          steps={[
             {
-              icon: "Shield",
-              title: "Ceramic Protection",
-              description: "Industry-leading coating with 5-year warranty",
+              tag: "Stage 01",
+              title: "High-Pressure Crevice Blast & Citrus Foam Pre-Wash",
+              subtitle: "Loosening hidden dirt in seams, rubber seals & body contours",
+              description: "We initiate the detailing workflow by applying thick, pH-neutral citrus foam and using regulated high-pressure compressed air to force trapped coastal sand and dust out of body panel gaps, window rubber trim, and emblem crevices before touching the paint.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
             },
             {
-              icon: "Star",
-              title: "5-Star Rated",
-              description: "Trusted by 500+ happy customers",
+              tag: "Stage 02",
+              title: "Deep Interior Crack & Vent Steam Sanitation",
+              subtitle: "220°F high-heat steam penetrating tight vents & console cracks",
+              description: "Pressurized 220°F dry steam is injected directly into air vent louvers, center console seams, gear shifters, and seat rail channels to melt sticky spills, sanitize surfaces, and kill odor-causing bacteria deep inside tight crevices.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team1.webp",
             },
             {
-              icon: "Award",
-              title: "Certified Detailers",
-              description: "IDA certified professionals on every job",
+              tag: "Stage 03",
+              title: "Fine-Brush Agitation for Hard-to-Reach Spots",
+              subtitle: "Delicate micro-brushing for buttons, dials & steering wheel seams",
+              description: "Using soft horsehair and ultra-fine synthetic detailing brushes, Rozay meticulously agitates every steering wheel button, climate control dial, door handle recess, and emblem surround where standard microfiber towels cannot reach.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
+            },
+            {
+              tag: "Stage 04",
+              title: "Carpet & Upholstery Deep Soil Extraction",
+              subtitle: "Lifting embedded North Myrtle Beach sand & deep fibers",
+              description: "Commercial-grade hot water extraction injects specialized fabric cleaner deep into floor carpets and seat upholstery, pulling out ground-in coastal sand, stubborn stains, and salt residue from under seat tracks.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
+            },
+            {
+              tag: "Stage 05",
+              title: "Ceramic UV Protection & Multi-Point Inspection",
+              subtitle: "Non-greasy matte shield & white-glove quality pass",
+              description: "We coat interior vinyl and leather with UV-blocking matte protectant to withstand South Carolina sunshine, seal exterior surfaces, and perform a final LED inspection pass checking every single crack and seam.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team3.webp",
             },
           ]}
         />
+      </div>
 
-        <div id="services">
-          <FeaturesStickyCards
-            items={[
-              {
-                title: "Interior Detail",
-                description: "Deep cleaning of seats, carpets, dashboard, and all interior surfaces. Leather conditioning and fabric protection included.",
-                primaryButton: { text: "Book Interior", href: "#contact" },
-                leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
-                rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team1.webp",
-              },
-              {
-                title: "Exterior Detail",
-                description: "Hand wash, clay bar treatment, polish, and premium wax application for a mirror-like finish that lasts.",
-                primaryButton: { text: "Book Exterior", href: "#contact" },
-                leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
-                rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
-              },
-              {
-                title: "Ceramic Coating",
-                description: "Long-lasting ceramic protection that shields your paint from UV rays, chemicals, and minor scratches for years.",
-                primaryButton: { text: "Book Ceramic", href: "#contact" },
-                leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
-                rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team3.webp",
-              },
-            ]}
-          />
-        </div>
+      {/* About Local Business / Rozay Section */}
+      <div id="about">
+        <AboutFeaturesSplit
+          tag="Local Small Business"
+          title="Meet Rozay — Your Local NMB Mobile Detailer"
+          description="Born out of a passion for absolute cleanliness and personal craftsmanship, Rozay's Mobile Detailing provides North Myrtle Beach vehicle owners with honest, high-end care right at their doorstep."
+          primaryButton={{ text: "Book with Rozay", href: "#contact" }}
+          imageSrc="https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp"
+          textAnimation="slide-up"
+          items={[
+            {
+              icon: "UserCheck",
+              title: "Owner-Operated Care",
+              description: "Rozay personally handles every detail job to ensure zero missed spots.",
+            },
+            {
+              icon: "Target",
+              title: "Specialized Crevice Tools",
+              description: "Utilizing professional steam extractors, narrow nozzles, and detail micro-brushes.",
+            },
+            {
+              icon: "MapPin",
+              title: "North Myrtle Beach Local",
+              description: "Proudly serving Cherry Grove, Ocean Drive, Little River, and the Grand Strand.",
+            },
+          ]}
+        />
+      </div>
 
-        <div id="testimonials">
-          <TestimonialMarqueeOverlayCards
-            textAnimation="slide-up"
-            tag="Testimonials"
-            title="Hear It From Our Clients"
-            description="Real results from real customers who trust us with their vehicles"
-            primaryButton={{ text: "Book Now", href: "#contact" }}
-            secondaryButton={{ text: "View Gallery", href: "#services" }}
-            testimonials={[
-              {
-                name: "James Wilson",
-                role: "BMW Owner",
-                company: "Miami, FL",
-                rating: 5,
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp",
-              },
-              {
-                name: "Maria Santos",
-                role: "Tesla Owner",
-                company: "Coral Gables, FL",
-                rating: 5,
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial2.webp",
-              },
-              {
-                name: "David Chen",
-                role: "Porsche Owner",
-                company: "Brickell, FL",
-                rating: 5,
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp",
-              },
-              {
-                name: "Sarah Thompson",
-                role: "Mercedes Owner",
-                company: "South Beach, FL",
-                rating: 4,
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial4.webp",
-              },
-              {
-                name: "Michael Johnson",
-                role: "Audi Owner",
-                company: "Coconut Grove, FL",
-                rating: 5,
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial5.webp",
-              },
-            ]}
-          />
-        </div>
+      {/* Specialty & Comparison Section */}
+      <div id="specialty">
+        <FeaturesComparison
+          textAnimation="slide-up"
+          tag="The Crevice Difference"
+          title="Why Rozay Outperforms Standard Car Washes"
+          description="Standard tunnel washes rush through jobs and leave dirt trapped inside interior cracks. Here is how Rozay's precision mobile process compares."
+          primaryButton={{ text: "Get Your Custom Quote", href: "#contact" }}
+          negativeItems={[
+            "Tunnel brushes leave swirl marks and micro-scratches",
+            "Trapped sand remains in air vents, cup holders & seat tracks",
+            "Automatic blowers push moisture deeper into body seams",
+            "Harsh bulk chemicals strip leather and dull dashboard plastic",
+            "Rushed 10-minute automated assembly line clean",
+          ]}
+          positiveItems={[
+            "100% scratch-free hand foam wash & ceramic protection",
+            "High-heat steam & compressed air purge every crevice clean",
+            "Meticulous micro-brushing of controls, seams & emblems",
+            "pH-neutral premium conditioners nourish leather & trim",
+            "Dedicated 3 to 5 hour custom detail at your location",
+          ]}
+        />
+      </div>
 
-        <div id="why-us">
-          <FeaturesComparison
-            textAnimation="slide-up"
-            tag="Why Us"
-            title="The Detailing Difference"
-            description="See why professional detailing is worth the investment"
-            primaryButton={{ text: "Get Started", href: "#contact" }}
-            negativeItems={[
-              "Automatic car washes scratch paint",
-              "DIY products leave swirl marks",
-              "No protection against UV damage",
-              "Interior stains and odors linger",
-              "Resale value drops over time",
-            ]}
-            positiveItems={[
-              "Hand wash and paint correction",
-              "Flawless, swirl-free finish",
-              "Ceramic coating blocks UV rays",
-              "Deep interior sanitization",
-              "Maintains and boosts resale value",
-            ]}
-          />
-        </div>
+      {/* Mobile Services & Packages Section */}
+      <div id="services">
+        <FeaturesStickyCards
+          items={[
+            {
+              title: "The Deep-Crack Interior Purge",
+              description: "Comprehensive interior deep cleaning focusing on hard-to-reach crevices. Includes air vent steam sanitation, seat rail channel degreasing, console seam micro-brushing, hot water carpet extraction, and leather conditioning.",
+              primaryButton: { text: "Book Interior Purge", href: "#contact" },
+              leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
+              rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team1.webp",
+            },
+            {
+              title: "Exterior Crevice & Paint Protection",
+              description: "Hand citrus foam bath, emblem/rubber seal brush detailing, wheel well scrub, iron paint decontamination, clay bar smoothing, and 12-month ceramic sealant shield.",
+              primaryButton: { text: "Book Exterior Detail", href: "#contact" },
+              leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
+              rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
+            },
+            {
+              title: "The Ultimate Rozay Signature Detail",
+              description: "Our top-tier mobile package combining our deep-crack interior purge with full exterior decontamination, engine bay trim dressing, and hydrophobic glass treatment.",
+              primaryButton: { text: "Book Full Detail", href: "#contact" },
+              leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
+              rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team3.webp",
+            },
+          ]}
+        />
+      </div>
 
-        <div id="team">
-          <TeamOverlayCards
-            textAnimation="slide-up"
-            tag="Our Experts"
-            title="Meet the Team"
-            description="Passionate detailers dedicated to perfection"
-            members={[
-              {
-                name: "Marcus Rivera",
-                role: "Lead Detailer",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp",
-              },
-              {
-                name: "Jake Thompson",
-                role: "Ceramic Specialist",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial4.webp",
-              },
-              {
-                name: "Daniel Cruz",
-                role: "Interior Expert",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp",
-              },
-            ]}
-          />
-        </div>
+      {/* Customer Reviews Section */}
+      <div id="testimonials">
+        <TestimonialMarqueeOverlayCards
+          textAnimation="slide-up"
+          tag="North Myrtle Beach Reviews"
+          title="Loved by Grand Strand Car Owners"
+          description="See what local drivers in North Myrtle Beach say about Rozay's attention to detail."
+          primaryButton={{ text: "Schedule Your Detail", href: "#contact" }}
+          secondaryButton={{ text: "View Services", href: "#services" }}
+          testimonials={[
+            {
+              name: "Marcus Vance",
+              role: "Ford F-150 Owner",
+              company: "North Myrtle Beach, SC",
+              rating: 5,
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp",
+            },
+            {
+              name: "Brenda Holloway",
+              role: "BMW X5 Owner",
+              company: "Cherry Grove, SC",
+              rating: 5,
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial2.webp",
+            },
+            {
+              name: "Dave Miller",
+              role: "Corvette Owner",
+              company: "Barefoot Landing, SC",
+              rating: 5,
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp",
+            },
+            {
+              name: "Sarah Jenkins",
+              role: "Jeep Wrangler Owner",
+              company: "Little River, SC",
+              rating: 5,
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial4.webp",
+            },
+            {
+              name: "Robert Taylor",
+              role: "Porsche 911 Owner",
+              company: "Ocean Drive, SC",
+              rating: 5,
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial5.webp",
+            },
+          ]}
+        />
+      </div>
 
-        <div id="faq">
-          <FaqSimple
-            textAnimation="slide-up"
-            tag="FAQ"
-            title="Frequently Asked Questions"
-            description="Everything you need to know about our detailing services"
-            items={[
-              {
-                question: "How long does a full detail take?",
-                answer: "A full interior and exterior detail typically takes 4-6 hours depending on the size and condition of your vehicle. Ceramic coating applications may require an additional day for proper curing.",
-              },
-              {
-                question: "How often should I get my car detailed?",
-                answer: "We recommend a full detail every 3-4 months to maintain your vehicle's appearance and protect its surfaces. Ceramic coated vehicles can go longer between details.",
-              },
-              {
-                question: "What is ceramic coating and how long does it last?",
-                answer: "Ceramic coating is a liquid polymer applied to your vehicle's exterior that creates a permanent bond with the paint. It provides superior protection against UV rays, chemicals, and minor scratches, lasting 2-5 years depending on the package.",
-              },
-              {
-                question: "Do you offer mobile detailing services?",
-                answer: "Yes, we offer mobile detailing for your convenience. Our fully equipped team can come to your home or office. Mobile service availability depends on your location and the package selected.",
-              },
-              {
-                question: "What products do you use?",
-                answer: "We exclusively use premium, professional-grade products that are safe for all vehicle surfaces. Our ceramic coatings are sourced from industry-leading manufacturers with proven durability and performance.",
-              },
-            ]}
-          />
-        </div>
+      {/* Team / Local Owner Section */}
+      <div id="team">
+        <TeamOverlayCards
+          textAnimation="slide-up"
+          tag="Local Owner-Operator"
+          title="Dedicated to Meticulous Perfection"
+          description="Hands-on detailing experience serving North Myrtle Beach with pride"
+          members={[
+            {
+              name: "Rozay",
+              role: "Founder & Master Detailer",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp",
+            },
+            {
+              name: "Marcus",
+              role: "Steam Extraction Specialist",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp",
+            },
+          ]}
+        />
+      </div>
 
-        <div id="contact">
-          <ContactSplitForm
-            textAnimation="slide-up"
-            tag="Contact"
-            title="Get Your Free Estimate"
-            description="Tell us about your project and we'll get back to you within 24 hours."
-            inputs={[
-              { name: "name", type: "text", placeholder: "Full Name", required: true },
-              { name: "email", type: "email", placeholder: "Email Address", required: true },
-              { name: "phone", type: "tel", placeholder: "Phone Number" },
-            ]}
-            textarea={{ name: "message", placeholder: "Tell us about your vehicle...", rows: 4, required: true }}
-            buttonText="Send Message"
-            videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4"
-          />
-        </div>
+      {/* FAQ Section */}
+      <div id="faq">
+        <FaqSimple
+          textAnimation="slide-up"
+          tag="FAQ"
+          title="Frequently Asked Questions"
+          description="Everything you need to know about our mobile setup and crevice detailing process"
+          items={[
+            {
+              question: "Where in North Myrtle Beach do you provide mobile service?",
+              answer: "We offer complete mobile detailing across North Myrtle Beach, Cherry Grove, Ocean Drive, Windcrest, Barefoot Landing, Little River, and surrounding Horry County communities. We bring our equipment directly to your driveway, condo, or office.",
+            },
+            {
+              question: "How do you clean deep cracks and hard-to-reach spots?",
+              answer: "We utilize 220°F commercial dry steam, regulated compressed air purgers, ultra-fine horsehair micro-brushes, and narrow extractor nozzles. This combination safely removes dust, spilled liquids, and coastal sand from air vents, button clusters, console seams, and seat rail channels.",
+            },
+            {
+              question: "What does the 5-stage cleaning process involve?",
+              answer: "Our workflow includes: 1) Crevice purge & citrus pre-foam, 2) High-heat interior vent & crack steam extraction, 3) Fine-brush agitation for tight spots & buttons, 4) Deep-fiber carpet sand extraction, and 5) Ceramic UV protection & white-glove inspection.",
+            },
+            {
+              question: "Do I need to provide water or electricity?",
+              answer: "We connect to standard residential exterior outlets and water spigots. If you are located at a condo or workplace without direct access, let us know when booking so we can accommodate your setup.",
+            },
+            {
+              question: "Is Rozay's Mobile Detailing locally owned?",
+              answer: "Yes! Rozay's Mobile Detailing is 100% locally owned and operated by Rozay in North Myrtle Beach, SC. Every customer gets personalized attention and local small-business care.",
+            },
+          ]}
+        />
+      </div>
 
-        
-      </StyleProvider>
+      {/* Contact & Booking Section */}
+      <div id="contact">
+        <ContactSplitForm
+          textAnimation="slide-up"
+          tag="Book Mobile Service"
+          title="Schedule Your Mobile Detail in NMB"
+          description="Ready to give your vehicle the deep-cleaning treatment it deserves? Fill out the form below or text (843) 555-7692."
+          inputs={[
+            { name: "name", type: "text", placeholder: "Full Name", required: true },
+            { name: "phone", type: "tel", placeholder: "Phone Number (for text confirmation)", required: true },
+            { name: "email", type: "email", placeholder: "Email Address", required: true },
+            { name: "vehicle", type: "text", placeholder: "Vehicle Make & Model (e.g. 2023 Ford F-150)", required: true },
+          ]}
+          textarea={{ name: "message", placeholder: "Tell us your location in North Myrtle Beach and any specific hard-to-reach spots or interior cracks that need special attention...", rows: 4, required: true }}
+          buttonText="Request Appointment"
+          videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4"
+        />
+      </div>
+    </StyleProvider>
   );
 }
