@@ -55,7 +55,7 @@ export default function HomePage() {
               title: "Rinse and Citrus Foam Pre-Wash",
               subtitle: "Loosening hidden dirt in seams, rubber seals & body contours",
               description: "We initiate the detailing workflow by applying thick, pH-neutral citrus foam and using regulated high-pressure compressed air to force trapped coastal sand and dust out of body panel gaps, window rubber trim, and emblem crevices before touching the paint.",
-              imageSrc: "https://picsum.photos/seed/1511038028/1200/800",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
             },
             {
               tag: "Stage 02",
