@@ -62,7 +62,7 @@ const DEFAULT_SERVICES: ServiceItem[] = [
     description: "Specialized marine pressure wash eliminating waterline algae, salt deposits, and deck residue to keep your watercraft sea-ready.",
     highlight: "Marine Scum Purge",
     icon: "Anchor",
-    imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/marinesacntuary.webp",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1794006420007-xdf55cx8.jpg",
   },
 ];
 
