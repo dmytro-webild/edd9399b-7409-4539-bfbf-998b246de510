@@ -2,6 +2,7 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 import HeroBillboardFeatures from "@/components/sections/hero/HeroBillboardFeatures";
 import FeaturesDetailedSteps from "@/components/sections/features/FeaturesDetailedSteps";
 import FeaturesComparison from "@/components/sections/features/FeaturesComparison";
+import FeaturesDetailedCards from "@/components/sections/features/FeaturesDetailedCards";
 import FeaturesStickyCards from "@/components/sections/features/FeaturesStickyCards";
 import FaqSimple from "@/components/sections/faq/FaqSimple";
 import ContactSplitForm from "@/components/sections/contact/ContactSplitForm";
@@ -100,6 +101,37 @@ export default function HomePage() {
             "Meticulous micro-brushing of controls, seams & emblems",
             "pH-neutral premium conditioners nourish leather & trim",
             "Dedicated 3 to 5 hour custom detail at your location",
+          ]}
+        />
+      </div>
+
+      {/* Inside Detail to Perfection Section */}
+      <div id="inside-detail">
+        <FeaturesDetailedCards
+          tag="Precision Interior Craftsman Work"
+          title="Inside Detail to Perfection"
+          description="Every cabin contour, vent seam, and leather stitch is restored using high-heat steam, micro-brush agitation, and premium matte protection."
+          primaryButton={{ text: "Reserve Interior Detail", href: "#contact" }}
+          textAnimation="slide-up"
+          items={[
+            {
+              title: "Air Vent & Climate Duct Sanitation",
+              description: "220°F commercial dry steam sterilizes air vents and flushes out trapped dust, mold, and coastal humidity odors for fresh, clean cabin air.",
+              tags: ["Steam Sanitation", "Odor Purge", "Allergen-Free Air"],
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
+            },
+            {
+              title: "Console & Seat Rail Deep Crevice Purge",
+              description: "High-pressure air streams and specialized micro-brushes dislodge embedded sand, crumbs, and debris from seat rail channels and button clusters.",
+              tags: ["Crevice Specialist", "Sand Extraction", "Micro-Brushing"],
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team1.webp",
+            },
+            {
+              title: "Leather Conditioning & UV Matte Protectant",
+              description: "pH-neutral formulas deep-clean leather grain and apply a non-greasy UV barrier to protect seats and dash panels against harsh South Carolina sunshine.",
+              tags: ["UV Protection", "Non-Greasy Matte Shield", "Leather Care"],
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
+            },
           ]}
         />
       </div>
