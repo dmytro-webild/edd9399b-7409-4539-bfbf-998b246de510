@@ -124,7 +124,7 @@ export default function HomePage() {
               title: "Console & Seat Rail Deep Crevice Purge",
               description: "High-pressure air streams and specialized micro-brushes dislodge embedded sand, crumbs, and debris from seat rail channels and button clusters.",
               tags: ["Crevice Specialist", "Sand Extraction", "Micro-Brushing"],
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team1.webp",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1793999942776-irxpujet.jpg",
             },
             {
               title: "Leather Conditioning & UV Matte Protectant",
