@@ -96,7 +96,7 @@ export default function HomePage() {
           title="Meet Rozay — Your Local NMB Mobile Detailer"
           description="Born out of a passion for absolute cleanliness and personal craftsmanship, Rozay's Mobile Detailing provides North Myrtle Beach vehicle owners with honest, high-end care right at their doorstep."
           primaryButton={{ text: "Book with Rozay", href: "#contact" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp"
+          imageSrc="https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp?_wi=1"
           textAnimation="slide-up"
           items={[
             {
@@ -187,7 +187,7 @@ export default function HomePage() {
               role: "Ford F-150 Owner",
               company: "North Myrtle Beach, SC",
               rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp?_wi=1",
             },
             {
               name: "Brenda Holloway",
@@ -201,7 +201,7 @@ export default function HomePage() {
               role: "Corvette Owner",
               company: "Barefoot Landing, SC",
               rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp?_wi=2",
             },
             {
               name: "Sarah Jenkins",
@@ -232,12 +232,12 @@ export default function HomePage() {
             {
               name: "Rozay",
               role: "Founder & Master Detailer",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp?_wi=3",
             },
             {
               name: "Marcus",
               role: "Steam Extraction Specialist",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp?_wi=2",
             },
           ]}
         />
