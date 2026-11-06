@@ -12,11 +12,7 @@ export default function Layout() {
       <NavbarCentered
                 logo="Rozay's Mobile Detailing"
                 navItems={[
-                  { name: "Workflow", href: "#process" },
-                  { name: "Crevice Specialty", href: "#specialty" },
                   { name: "Services", href: "#services" },
-                  { name: "About Rozay", href: "#about" },
-                  { name: "Testimonials", href: "#testimonials" },
                   { name: "FAQ", href: "#faq" },
                   { name: "Contact", href: "#contact" },
                 ]}
