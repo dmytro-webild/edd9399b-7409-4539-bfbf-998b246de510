@@ -1,11 +1,8 @@
 import { StyleProvider } from "@/components/ui/StyleProvider";
 import HeroBillboardFeatures from "@/components/sections/hero/HeroBillboardFeatures";
 import FeaturesDetailedSteps from "@/components/sections/features/FeaturesDetailedSteps";
-import AboutFeaturesSplit from "@/components/sections/about/AboutFeaturesSplit";
 import FeaturesComparison from "@/components/sections/features/FeaturesComparison";
 import FeaturesStickyCards from "@/components/sections/features/FeaturesStickyCards";
-import TestimonialMarqueeOverlayCards from "@/components/sections/testimonial/TestimonialMarqueeOverlayCards";
-import TeamOverlayCards from "@/components/sections/team/TeamOverlayCards";
 import FaqSimple from "@/components/sections/faq/FaqSimple";
 import ContactSplitForm from "@/components/sections/contact/ContactSplitForm";
 
@@ -82,35 +79,6 @@ export default function HomePage() {
         />
       </div>
 
-      {/* About Local Business / Rozay Section */}
-      <div id="about">
-        <AboutFeaturesSplit
-          tag="Local Small Business"
-          title="Meet Rozay — Your Local NMB Mobile Detailer"
-          description="Born out of a passion for absolute cleanliness and personal craftsmanship, Rozay's Mobile Detailing provides North Myrtle Beach vehicle owners with honest, high-end care right at their doorstep."
-          primaryButton={{ text: "Book with Rozay", href: "#contact" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp?_wi=1"
-          textAnimation="slide-up"
-          items={[
-            {
-              icon: "UserCheck",
-              title: "Owner-Operated Care",
-              description: "Rozay personally handles every detail job to ensure zero missed spots.",
-            },
-            {
-              icon: "Target",
-              title: "Specialized Crevice Tools",
-              description: "Utilizing professional steam extractors, narrow nozzles, and detail micro-brushes.",
-            },
-            {
-              icon: "MapPin",
-              title: "North Myrtle Beach Local",
-              description: "Proudly serving Cherry Grove, Ocean Drive, Little River, and the Grand Strand.",
-            },
-          ]}
-        />
-      </div>
-
       {/* Specialty & Comparison Section */}
       <div id="specialty">
         <FeaturesComparison
@@ -160,77 +128,6 @@ export default function HomePage() {
               primaryButton: { text: "Book Full Detail", href: "#contact" },
               leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
               rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team3.webp",
-            },
-          ]}
-        />
-      </div>
-
-      {/* Customer Reviews Section */}
-      <div id="testimonials">
-        <TestimonialMarqueeOverlayCards
-          textAnimation="slide-up"
-          tag="North Myrtle Beach Reviews"
-          title="Loved by Grand Strand Car Owners"
-          description="See what local drivers in North Myrtle Beach say about Rozay's attention to detail."
-          primaryButton={{ text: "Schedule Your Detail", href: "#contact" }}
-          secondaryButton={{ text: "View Services", href: "#services" }}
-          testimonials={[
-            {
-              name: "Marcus Vance",
-              role: "Ford F-150 Owner",
-              company: "North Myrtle Beach, SC",
-              rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp?_wi=1",
-            },
-            {
-              name: "Brenda Holloway",
-              role: "BMW X5 Owner",
-              company: "Cherry Grove, SC",
-              rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial2.webp",
-            },
-            {
-              name: "Dave Miller",
-              role: "Corvette Owner",
-              company: "Barefoot Landing, SC",
-              rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp?_wi=2",
-            },
-            {
-              name: "Sarah Jenkins",
-              role: "Jeep Wrangler Owner",
-              company: "Little River, SC",
-              rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial4.webp",
-            },
-            {
-              name: "Robert Taylor",
-              role: "Porsche 911 Owner",
-              company: "Ocean Drive, SC",
-              rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial5.webp",
-            },
-          ]}
-        />
-      </div>
-
-      {/* Team / Local Owner Section */}
-      <div id="team">
-        <TeamOverlayCards
-          textAnimation="slide-up"
-          tag="Local Owner-Operator"
-          title="Dedicated to Meticulous Perfection"
-          description="Hands-on detailing experience serving North Myrtle Beach with pride"
-          members={[
-            {
-              name: "Rozay",
-              role: "Founder & Master Detailer",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial3.webp?_wi=3",
-            },
-            {
-              name: "Marcus",
-              role: "Steam Extraction Specialist",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/testimonials/testimonial1.webp?_wi=2",
             },
           ]}
         />
