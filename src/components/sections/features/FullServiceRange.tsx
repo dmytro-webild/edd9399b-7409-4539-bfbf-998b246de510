@@ -30,7 +30,7 @@ const DEFAULT_SERVICES: ServiceItem[] = [
     description: "Deep vent steam sanitation, citrus foam pre-wash, and ceramic UV protection tailored for luxury sedans, coupes, and daily drivers.",
     highlight: "Showroom Finish",
     icon: "Car",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1793989721196-beg48vh9.jpg",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1793989721196-beg48vh9.jpg?_wi=1",
   },
   {
     title: "Trucks",
