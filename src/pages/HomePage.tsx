@@ -68,7 +68,7 @@ export default function HomePage() {
               tag: "Stage 03",
               title: "Deep Soil Extraction & Rinse",
               subtitle: "Lifting embedded North Myrtle Beach sand & deep fibers",
-              description: "Commercial-grade hot water extraction injects specialized fabric cleaner deep into floor carpets and seat upholstery, pulling out ground-in coastal sand, stubborn stains, and salt residue from under seat tracks.",
+              description: "Commercial-grade pressure washing, tuned to cause no harm to the paint or exterior of your vehicle. Caution is very important; this is almost the finishing touch.",
               imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1793990566153-x90dncmg.jpg",
             },
             {
