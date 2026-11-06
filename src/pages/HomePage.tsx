@@ -1,5 +1,6 @@
 import { StyleProvider } from "@/components/ui/StyleProvider";
 import HeroBillboardFeatures from "@/components/sections/hero/HeroBillboardFeatures";
+import FullServiceRange from "@/components/sections/features/FullServiceRange";
 import FeaturesDetailedSteps from "@/components/sections/features/FeaturesDetailedSteps";
 import FeaturesComparison from "@/components/sections/features/FeaturesComparison";
 import FeaturesDetailedCards from "@/components/sections/features/FeaturesDetailedCards";
@@ -17,7 +18,7 @@ export default function HomePage() {
         title="Rozay's Mobile Detailing"
         description="North Myrtle Beach's premier mobile detailing specialist. We specialize in deep-crack cleaning, vent steam extraction, and hard-to-reach spots, bringing professional equipment right to your driveway."
         primaryButton={{ text: "Book Mobile Service", href: "#contact" }}
-        secondaryButton={{ text: "View 4-Stage Process", href: "#process" }}
+        secondaryButton={{ text: "View Full Service Range", href: "#full-service" }}
         videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4"
         features={[
           {
@@ -37,6 +38,11 @@ export default function HomePage() {
           },
         ]}
       />
+
+      {/* Roosevelt Gerald Full Service Range Section */}
+      <div id="full-service">
+        <FullServiceRange />
+      </div>
 
       {/* 4-Stage Cleaning Workflow Section */}
       <div id="process">
