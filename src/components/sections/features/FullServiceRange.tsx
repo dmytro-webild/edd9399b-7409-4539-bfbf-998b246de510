@@ -54,7 +54,7 @@ const DEFAULT_SERVICES: ServiceItem[] = [
     description: "Soft-wash home exterior revival for vinyl siding, brick, driveways, and porches that dramatically boosts curb appeal.",
     highlight: "Exterior Revival",
     icon: "Home",
-    imageSrc: "https://storage.googleapis.com/webild/default/templates/real-estate/properties/property1.webp",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1794005978336-ngpjmf58.webp",
   },
   {
     title: "Boats",
