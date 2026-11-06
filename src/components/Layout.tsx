@@ -45,7 +45,7 @@ export default function Layout() {
                   {
                     title: "Contact Rozay",
                     items: [
-                      { label: "(843) 555-7692", href: "tel:8435557692" },
+                      { label: "843-516-0826", href: "tel:8435160826" },
                       { label: "rozay@rozaysmobiledetailing.com", href: "mailto:rozay@rozaysmobiledetailing.com" },
                       { label: "North Myrtle Beach, SC" },
                     ],

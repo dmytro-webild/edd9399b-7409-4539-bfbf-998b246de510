@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Phone, Tag as TagIcon, HelpCircle } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
@@ -22,6 +23,10 @@ type ContactSplitFormProps = {
   tag: string;
   title: string;
   description: string;
+  phone?: string;
+  phoneLabel?: string;
+  freeQuotesNote?: string;
+  inquiriesNote?: string;
   inputs: InputField[];
   textarea?: TextareaField;
   buttonText: string;
@@ -33,6 +38,10 @@ const ContactSplitForm = ({
   tag,
   title,
   description,
+  phone,
+  phoneLabel,
+  freeQuotesNote,
+  inquiriesNote,
   inputs,
   textarea,
   buttonText,
@@ -103,6 +112,52 @@ const ContactSplitForm = ({
                   className="text-lg md:text-xl leading-snug text-balance"
                 />
               </div>
+
+              {(phone || freeQuotesNote || inquiriesNote) && (
+                <div aria-label="Contact information" className="w-full p-4 md:p-5 card rounded flex flex-col gap-3 text-left border border-accent/20 bg-accent/5">
+                  <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-accent">
+                    <Phone className="size-4" />
+                    <span>Contact Information & Direct Booking</span>
+                  </div>
+
+                  {phone && (
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 card rounded bg-card/70">
+                      <div>
+                        <p className="text-xs text-foreground/70">{phoneLabel || "Call or Text for Booking Appointments"}</p>
+                        <a
+                          href={`tel:${phone.replace(/[^0-9+]/g, "")}`}
+                          className="text-2xl md:text-3xl font-bold text-accent hover:underline inline-flex items-center gap-2 mt-0.5"
+                        >
+                          {phone}
+                        </a>
+                      </div>
+                      <a
+                        href={`tel:${phone.replace(/[^0-9+]/g, "")}`}
+                        className="px-4 py-2 text-xs font-semibold primary-button text-primary-cta-text rounded text-center shrink-0 self-start sm:self-center"
+                      >
+                        Call Now
+                      </a>
+                    </div>
+                  )}
+
+                  {(freeQuotesNote || inquiriesNote) && (
+                    <div className="flex flex-col gap-2 pt-1 text-sm text-foreground/90">
+                      {freeQuotesNote && (
+                        <div className="flex items-start gap-2">
+                          <TagIcon className="size-4 text-accent shrink-0 mt-0.5" />
+                          <span>{freeQuotesNote}</span>
+                        </div>
+                      )}
+                      {inquiriesNote && (
+                        <div className="flex items-start gap-2">
+                          <HelpCircle className="size-4 text-accent shrink-0 mt-0.5" />
+                          <span>{inquiriesNote}</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
 
               <div className="flex flex-col gap-3">
                 {inputs.map((input) => (
