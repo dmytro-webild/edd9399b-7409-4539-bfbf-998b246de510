@@ -19,7 +19,7 @@ export default function HomePage() {
         title="Rozay's Mobile Detailing"
         description="North Myrtle Beach's premier mobile detailing specialist. We specialize in deep-crack cleaning, vent steam extraction, and hard-to-reach spots, bringing professional equipment right to your driveway."
         primaryButton={{ text: "Book Mobile Service", href: "#contact" }}
-        secondaryButton={{ text: "View 5-Stage Process", href: "#process" }}
+        secondaryButton={{ text: "View 4-Stage Process", href: "#process" }}
         videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4"
         features={[
           {
@@ -40,11 +40,11 @@ export default function HomePage() {
         ]}
       />
 
-      {/* 5-Stage Cleaning Workflow Section */}
+      {/* 4-Stage Cleaning Workflow Section */}
       <div id="process">
         <FeaturesDetailedSteps
           tag="Step-by-Step Detailing Workflow"
-          title="Our 5-Stage Deep-Cleaning Process"
+          title="Our 4-Stage Deep-Cleaning Process"
           description="Explore our detailed workflow step by step, designed to eliminate dirt, sand, and grime from every hard-to-reach spot on your vehicle."
           primaryButton={{ text: "Reserve Your Mobile Detail", href: "#contact" }}
           secondaryButton={{ text: "Compare Our Method", href: "#specialty" }}
@@ -59,27 +59,20 @@ export default function HomePage() {
             },
             {
               tag: "Stage 02",
-              title: "Deep Interior Crack & Vent Steam Sanitation",
-              subtitle: "220°F high-heat steam penetrating tight vents & console cracks",
-              description: "Pressurized 220°F dry steam is injected directly into air vent louvers, center console seams, gear shifters, and seat rail channels to melt sticky spills, sanitize surfaces, and kill odor-causing bacteria deep inside tight crevices.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team1.webp",
-            },
-            {
-              tag: "Stage 03",
               title: "Fine-Brush Agitation for Hard-to-Reach Spots",
               subtitle: "Delicate micro-brushing for buttons, dials & steering wheel seams",
               description: "Using soft horsehair and ultra-fine synthetic detailing brushes, Rozay meticulously agitates every steering wheel button, climate control dial, door handle recess, and emblem surround where standard microfiber towels cannot reach.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
             },
             {
-              tag: "Stage 04",
+              tag: "Stage 03",
               title: "Carpet & Upholstery Deep Soil Extraction",
               subtitle: "Lifting embedded North Myrtle Beach sand & deep fibers",
               description: "Commercial-grade hot water extraction injects specialized fabric cleaner deep into floor carpets and seat upholstery, pulling out ground-in coastal sand, stubborn stains, and salt residue from under seat tracks.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
             },
             {
-              tag: "Stage 05",
+              tag: "Stage 04",
               title: "Ceramic UV Protection & Multi-Point Inspection",
               subtitle: "Non-greasy matte shield & white-glove quality pass",
               description: "We coat interior vinyl and leather with UV-blocking matte protectant to withstand South Carolina sunshine, seal exterior surfaces, and perform a final LED inspection pass checking every single crack and seam.",
@@ -260,8 +253,8 @@ export default function HomePage() {
               answer: "We utilize 220°F commercial dry steam, regulated compressed air purgers, ultra-fine horsehair micro-brushes, and narrow extractor nozzles. This combination safely removes dust, spilled liquids, and coastal sand from air vents, button clusters, console seams, and seat rail channels.",
             },
             {
-              question: "What does the 5-stage cleaning process involve?",
-              answer: "Our workflow includes: 1) Rinse & citrus foam pre-wash, 2) High-heat interior vent & crack steam extraction, 3) Fine-brush agitation for tight spots & buttons, 4) Deep-fiber carpet sand extraction, and 5) Ceramic UV protection & white-glove inspection.",
+              question: "What does the 4-stage cleaning process involve?",
+              answer: "Our workflow includes: 1) Rinse & citrus foam pre-wash, 2) Fine-brush agitation for tight spots & buttons, 3) Deep-fiber carpet sand extraction, and 4) Ceramic UV protection & white-glove inspection.",
             },
             {
               question: "Do I need to provide water or electricity?",
