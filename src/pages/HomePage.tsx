@@ -66,7 +66,7 @@ export default function HomePage() {
             },
             {
               tag: "Stage 03",
-              title: "Carpet & Upholstery Deep Soil Extraction",
+              title: "Deep Soil Extraction & Rinse",
               subtitle: "Lifting embedded North Myrtle Beach sand & deep fibers",
               description: "Commercial-grade hot water extraction injects specialized fabric cleaner deep into floor carpets and seat upholstery, pulling out ground-in coastal sand, stubborn stains, and salt residue from under seat tracks.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
@@ -254,7 +254,7 @@ export default function HomePage() {
             },
             {
               question: "What does the 4-stage cleaning process involve?",
-              answer: "Our workflow includes: 1) Rinse & citrus foam pre-wash, 2) Fine-brush agitation for tight spots & buttons, 3) Deep-fiber carpet sand extraction, and 4) Ceramic UV protection & white-glove inspection.",
+              answer: "Our workflow includes: 1) Rinse & citrus foam pre-wash, 2) Fine-brush agitation for tight spots & buttons, 3) Deep soil extraction & rinse, and 4) Ceramic UV protection & white-glove inspection.",
             },
             {
               question: "Do I need to provide water or electricity?",
