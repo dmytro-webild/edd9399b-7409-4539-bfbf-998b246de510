@@ -75,7 +75,7 @@ export default function HomePage() {
               tag: "Stage 04",
               title: "Ceramic UV Protection & Multi-Point Inspection",
               subtitle: "Non-greasy matte shield & white-glove quality pass",
-              description: "We coat interior vinyl and leather with UV-blocking matte protectant to withstand South Carolina sunshine, seal exterior surfaces, and perform a final LED inspection pass checking every single crack and seam.",
+              description: "We coat the outside with a UV-Blocking matte Protectant to withstand the South Carolina Sunshine. It adds a finishing touch to the outside of the vehicle that stands out and protects the paint from wear and tear up to 6 months.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team3.webp",
             },
           ]}
