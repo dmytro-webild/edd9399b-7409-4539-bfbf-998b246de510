@@ -130,7 +130,7 @@ export default function HomePage() {
               title: "Leather Conditioning and Shiny Finish",
               description: "pH-neutral formulas deep-clean leather grain and apply a non-greasy UV barrier to protect seats and dash panels against harsh South Carolina sunshine.",
               tags: ["UV Protection", "Non-Greasy Matte Shield", "Leather Care"],
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1794000556274-qy73x0sm.jpg",
             },
           ]}
         />
@@ -151,7 +151,7 @@ export default function HomePage() {
               title: "Exterior Crevice & Paint Protection",
               description: "Hand citrus foam bath, emblem/rubber seal brush detailing, wheel well scrub, iron paint decontamination, clay bar smoothing, and 12-month ceramic sealant shield.",
               primaryButton: { text: "Book Exterior Detail", href: "#contact" },
-              leftImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
+              leftImageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1794000556274-qy73x0sm.jpg",
               rightImageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
             },
             {
