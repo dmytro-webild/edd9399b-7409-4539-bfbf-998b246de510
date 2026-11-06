@@ -62,7 +62,7 @@ export default function HomePage() {
               title: "Fine-Brush Agitation for Hard-to-Reach Spots",
               subtitle: "Delicate micro-brushing for buttons, dials & steering wheel seams",
               description: "Using soft horsehair and ultra-fine synthetic detailing brushes, Rozay meticulously agitates every steering wheel button, climate control dial, door handle recess, and emblem surround where standard microfiber towels cannot reach.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1793990120999-2ldrg0jv.png",
             },
             {
               tag: "Stage 03",
