@@ -52,7 +52,7 @@ export default function HomePage() {
           steps={[
             {
               tag: "Stage 01",
-              title: "High-Pressure Crevice Blast & Citrus Foam Pre-Wash",
+              title: "Rinse and Citrus Foam Pre-Wash",
               subtitle: "Loosening hidden dirt in seams, rubber seals & body contours",
               description: "We initiate the detailing workflow by applying thick, pH-neutral citrus foam and using regulated high-pressure compressed air to force trapped coastal sand and dust out of body panel gaps, window rubber trim, and emblem crevices before touching the paint.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
@@ -261,7 +261,7 @@ export default function HomePage() {
             },
             {
               question: "What does the 5-stage cleaning process involve?",
-              answer: "Our workflow includes: 1) Crevice purge & citrus pre-foam, 2) High-heat interior vent & crack steam extraction, 3) Fine-brush agitation for tight spots & buttons, 4) Deep-fiber carpet sand extraction, and 5) Ceramic UV protection & white-glove inspection.",
+              answer: "Our workflow includes: 1) Rinse & citrus foam pre-wash, 2) High-heat interior vent & crack steam extraction, 3) Fine-brush agitation for tight spots & buttons, 4) Deep-fiber carpet sand extraction, and 5) Ceramic UV protection & white-glove inspection.",
             },
             {
               question: "Do I need to provide water or electricity?",
