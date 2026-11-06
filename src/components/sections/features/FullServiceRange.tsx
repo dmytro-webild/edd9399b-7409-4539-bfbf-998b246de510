@@ -46,7 +46,7 @@ const DEFAULT_SERVICES: ServiceItem[] = [
     description: "Calibrated pressure wash safely removing coastal mildew, salt crust, and algae build-up from wood and composite decking.",
     highlight: "Wood & Deck Renewal",
     icon: "Layers",
-    imageSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/img-6.jpg",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1794005341609-pkkgge9s.jpg",
   },
   {
     title: "Houses",
