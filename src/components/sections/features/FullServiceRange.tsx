@@ -38,7 +38,7 @@ const DEFAULT_SERVICES: ServiceItem[] = [
     description: "Heavy-duty cab purging, seat rail channel sand extraction, and durable sealant engineered for work trucks and family SUVs.",
     highlight: "Deep Crevice Purge",
     icon: "Truck",
-    imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1794005652800-tyuq9113.jpg",
   },
   {
     title: "Decks",
