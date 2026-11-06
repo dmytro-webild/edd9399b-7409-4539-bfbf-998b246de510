@@ -127,7 +127,7 @@ export default function HomePage() {
               imageSrc: "https://storage.googleapis.com/webild/users/user_3LfZxSnU9hSlEaOYXn1eBLHqAHe/uploaded-1793999942776-irxpujet.jpg",
             },
             {
-              title: "Leather Conditioning and Shinny Finish",
+              title: "Leather Conditioning and Shiny Finish",
               description: "pH-neutral formulas deep-clean leather grain and apply a non-greasy UV barrier to protect seats and dash panels against harsh South Carolina sunshine.",
               tags: ["UV Protection", "Non-Greasy Matte Shield", "Leather Care"],
               imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/team/team2.webp",
