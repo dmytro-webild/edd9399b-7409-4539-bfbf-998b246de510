@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Tag as TagIcon, HelpCircle } from "lucide-react";
+import { Phone, Mail, Tag as TagIcon, HelpCircle } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
@@ -25,6 +25,8 @@ type ContactSplitFormProps = {
   description: string;
   phone?: string;
   phoneLabel?: string;
+  email?: string;
+  emailLabel?: string;
   freeQuotesNote?: string;
   inquiriesNote?: string;
   inputs: InputField[];
@@ -40,6 +42,8 @@ const ContactSplitForm = ({
   description,
   phone,
   phoneLabel,
+  email,
+  emailLabel,
   freeQuotesNote,
   inquiriesNote,
   inputs,
@@ -113,7 +117,7 @@ const ContactSplitForm = ({
                 />
               </div>
 
-              {(phone || freeQuotesNote || inquiriesNote) && (
+              {(phone || email || freeQuotesNote || inquiriesNote) && (
                 <div aria-label="Contact information" className="w-full p-4 md:p-5 card rounded flex flex-col gap-3 text-left border border-accent/20 bg-accent/5">
                   <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-accent">
                     <Phone className="size-4" />
@@ -136,6 +140,27 @@ const ContactSplitForm = ({
                         className="px-4 py-2 text-xs font-semibold primary-button text-primary-cta-text rounded text-center shrink-0 self-start sm:self-center"
                       >
                         Call Now
+                      </a>
+                    </div>
+                  )}
+
+                  {email && (
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 card rounded bg-card/70">
+                      <div>
+                        <p className="text-xs text-foreground/70">{emailLabel || "Email Direct Inquiries"}</p>
+                        <a
+                          href={`mailto:${email}`}
+                          className="text-base md:text-lg font-bold text-accent hover:underline inline-flex items-center gap-2 mt-0.5 break-all"
+                        >
+                          <Mail className="size-4 shrink-0" />
+                          {email}
+                        </a>
+                      </div>
+                      <a
+                        href={`mailto:${email}`}
+                        className="px-4 py-2 text-xs font-semibold secondary-button rounded text-center shrink-0 self-start sm:self-center"
+                      >
+                        Send Email
                       </a>
                     </div>
                   )}
